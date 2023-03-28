@@ -29,7 +29,7 @@ public class DeleteServlet extends HttpServlet {
             UserDao dao = new UserDao(ConnectionProvider.getConnection());
             boolean b = dao.delete(delid);
             if (b == true) {
-                response.sendRedirect("edit_employee.jsp");
+                response.sendRedirect("delete.jsp");
                 HttpSession s = request.getSession();
                 message m = new message("Deleted SuccessFully", "success", "danger");
                 s.setAttribute("msg", m);

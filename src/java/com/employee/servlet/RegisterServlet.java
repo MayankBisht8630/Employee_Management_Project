@@ -52,7 +52,7 @@ public class RegisterServlet extends HttpServlet
                 }
                 else
                 {
-                    out.println("Error");
+                    out.println("User Mobie No or Email Alredy Exist");
                 }
                 
             }

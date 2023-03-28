@@ -110,7 +110,7 @@
 
                            if(data.trim()=== 'Done')
                            {
-                            swal("Register Successful !! Redirect To Login Page")
+                            swal("Register Successful !! Redirect To Home Page")
                                     .then((value) => {
                                         window.location="index.jsp"
                                     });

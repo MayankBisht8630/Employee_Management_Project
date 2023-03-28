@@ -1,0 +1,44 @@
+body
+{
+    
+}
+.primary-background 
+{
+    background: #6a1b9a!important;
+}
+.banner-background
+{
+               clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 90%, 70% 100%, 28% 90%, 0 100%, 0 0);
+}
+.container .display-image{
+    position: fixed;
+    top :0; left:0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;   
+    display: none;
+}
+.container .popup-image span{
+    position: absolute;
+    top:0; right:10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container .popup-image img{
+    position: absolute;
+    top:0px; left:50px;
+    transform: translate(-50% , -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media(max-width: 768px){
+    .container .popup-image img {
+        width: 95%;
+    } 
+}
